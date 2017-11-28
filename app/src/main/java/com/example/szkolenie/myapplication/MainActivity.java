@@ -15,11 +15,11 @@ Switch przelacznik;
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       Button cos= findViewById(R.id.button);
+       Button klamstwaioszczerstwa= findViewById(R.id.button);
     przelacznik=findViewById(R.id.switch1);
-zmienNazwe(cos,"tekst");
+zmienNazwe(klamstwaioszczerstwa,"tekst");
 
-        guzik.setOnClickListener(new View.OnClickListener() {
+klamstwaioszczerstwa.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (przelacznik.isChecked()) {
                     Intent komunikat=new Intent(MainActivity.this,Main2Activity.class);
@@ -43,7 +43,6 @@ zmienNazwe(cos,"tekst");
             });
 
     }
-    protected  void  zmienNazwe(Button guzik,CharSequence Innyguzik) {
-            guzik.setText(tekst);
+    protected  void  zmienNazwe(Button guzik,CharSequence klamstwaioszczerstwa) {guzik.setText(klamstwaioszczerstwa);
     }
 }
