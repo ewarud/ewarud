@@ -36,14 +36,14 @@ zmienNazwe(cos,"tekst");
             zmienNazwe(button2,"tekstt2");
             button2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    Intent komunikat2=new Intent(MainActivity.this,snieg.class);
-                    startActivity(komunikat2);
+                    Intent komunikat3=new Intent(MainActivity.this,snieg.class);
+                    startActivity(komunikat3);
 
                 }
             });
 
     }
-    protected  void  zmienNazwe(Button guzik,CharSequence tekst) {
+    protected  void  zmienNazwe(Button guzik,CharSequence Innyguzik) {
             guzik.setText(tekst);
     }
 }
